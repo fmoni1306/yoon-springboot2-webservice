@@ -41,6 +41,7 @@ dependencies {
     // MariaDB 드라이버
     compileOnly 'org.mariadb.jdbc:mariadb-java-client:2.7.3'
 
+
 }
 
 test {
