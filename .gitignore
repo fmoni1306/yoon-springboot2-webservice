@@ -1,4 +1,3 @@
 .gradle
 .idea
-application-oauth-google.yml
-application-oauth-naver.yml
+*.yml
