@@ -11,4 +11,3 @@ spring:
     include: oauth-google, oauth-naver
   session:
     store-type: jdbc
-
