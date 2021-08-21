@@ -8,5 +8,7 @@ spring:
   datasource:
     url: jdbc:h2:mem:testdb
   profiles:
-    include: oauth
+    include: oauth-google, oauth-naver
+  session:
+    store-type: jdbc
 
