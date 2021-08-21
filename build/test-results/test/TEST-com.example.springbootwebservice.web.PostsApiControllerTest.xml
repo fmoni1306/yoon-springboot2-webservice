@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.springbootwebservice.web.PostsApiControllerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-21T12:39:15" hostname="DESKTOP-PAEG6P6" time="0.076">
+  <properties/>
+  <testcase name="postsCreate()" classname="com.example.springbootwebservice.web.PostsApiControllerTest" time="0.055"/>
+  <testcase name="postsModify()" classname="com.example.springbootwebservice.web.PostsApiControllerTest" time="0.02"/>
+  <system-out><![CDATA[2021-08-21 21:39:14.567  INFO 15320 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.springbootwebservice.web.PostsApiControllerTest], using SpringBootContextLoader
+2021-08-21 21:39:14.568  INFO 15320 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.springbootwebservice.web.PostsApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-08-21 21:39:14.568  INFO 15320 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.springbootwebservice.web.PostsApiControllerTest]: PostsApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-08-21 21:39:14.570  INFO 15320 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.springbootwebservice.SpringBootWebserviceApplication for test class com.example.springbootwebservice.web.PostsApiControllerTest
+2021-08-21 21:39:14.571  INFO 15320 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-08-21 21:39:14.572  INFO 15320 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@38df45c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2e52fa9, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@38e22950, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3a9f148b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@56dc3890, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d6fdd85, org.springframework.test.context.transaction.TransactionalTestExecutionListener@546ec3d1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1617be9b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@21381c71, org.springframework.test.context.event.EventPublishingTestExecutionListener@22386e26, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@6a41fb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b22d40b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4a189e8a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2b3090b1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@798779b5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@44387802, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4ada52c1]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.3)
+
+2021-08-21 21:39:14.588  INFO 15320 --- [    Test worker] c.e.s.web.PostsApiControllerTest         : Starting PostsApiControllerTest using Java 11.0.11 on DESKTOP-PAEG6P6 with PID 15320 (started by Yoon in C:\Users\Yoon\Desktop\Spring\spring-boot-webservice)
+2021-08-21 21:39:14.588  INFO 15320 --- [    Test worker] c.e.s.web.PostsApiControllerTest         : No active profile set, falling back to default profiles: default
+2021-08-21 21:39:14.720  INFO 15320 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-21 21:39:14.734  INFO 15320 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2021-08-21 21:39:14.827  INFO 15320 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-08-21 21:39:14.828  INFO 15320 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-21 21:39:14.829  INFO 15320 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-21 21:39:14.848  INFO 15320 --- [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-08-21 21:39:14.848  INFO 15320 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 258 ms
+2021-08-21 21:39:14.865  INFO 15320 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-08-21 21:39:14.867  INFO 15320 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-08-21 21:39:14.868  INFO 15320 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bb8dd1cc-6ceb-4c79-97e5-ac0ca45ea82e'
+2021-08-21 21:39:14.952  INFO 15320 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-21 21:39:14.958  INFO 15320 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Hibernate: drop table if exists posts CASCADE 
+Hibernate: drop table if exists user CASCADE 
+Hibernate: create table posts (id bigint generated by default as identity, created_date timestamp, modified_date timestamp, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id))
+Hibernate: create table user (id bigint generated by default as identity, email varchar(255) not null, name varchar(255) not null, picture varchar(255), role varchar(255) not null, primary key (id))
+2021-08-21 21:39:14.989  INFO 15320 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-21 21:39:14.989  INFO 15320 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-21 21:39:15.076  WARN 15320 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-21 21:39:15.182  INFO 15320 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a256737, org.springframework.security.web.context.SecurityContextPersistenceFilter@51c378db, org.springframework.security.web.header.HeaderWriterFilter@599d1991, org.springframework.security.web.authentication.logout.LogoutFilter@286b05db, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1f29d63c, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1e6df631, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d3bd1d9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@94708ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5125d8a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6045028c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@580ea78e, org.springframework.security.web.session.SessionManagementFilter@63a3c411, org.springframework.security.web.access.ExceptionTranslationFilter@17c2f487, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b1f0dc2]
+2021-08-21 21:39:15.255  INFO 15320 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-21 21:39:15.347  INFO 15320 --- [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring TestDispatcherServlet ''
+2021-08-21 21:39:15.347  INFO 15320 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-21 21:39:15.347  INFO 15320 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2021-08-21 21:39:15.356  INFO 15320 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60970 (http) with context path ''
+2021-08-21 21:39:15.357  INFO 15320 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2021-08-21 21:39:15.358  INFO 15320 --- [    Test worker] c.e.s.web.PostsApiControllerTest         : Started PostsApiControllerTest in 0.785 seconds (JVM running for 6.98)
+2021-08-21 21:39:15.364  INFO 15320 --- [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring TestDispatcherServlet ''
+2021-08-21 21:39:15.364  INFO 15320 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-21 21:39:15.364  INFO 15320 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+Hibernate: insert into posts (id, created_date, modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: delete from posts where id=?
+2021-08-21 21:39:15.417  INFO 15320 --- [    Test worker] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring TestDispatcherServlet ''
+2021-08-21 21:39:15.417  INFO 15320 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-08-21 21:39:15.418  INFO 15320 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+Hibernate: insert into posts (id, created_date, modified_date, author, content, title) values (null, ?, ?, ?, ?, ?)
+http://localhost:60970/api/v1/posts/2
+Hibernate: select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=?
+Hibernate: update posts set created_date=?, modified_date=?, author=?, content=?, title=? where id=?
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: delete from posts where id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

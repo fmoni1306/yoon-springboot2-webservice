@@ -32,6 +32,8 @@ dependencies {
 
     // spring security
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.5.3'
+    testImplementation 'org.springframework.security:spring-security-test:5.5.2'
+
 
     // spring session jdbc
     implementation 'org.springframework.session:spring-session-jdbc:2.5.2'
