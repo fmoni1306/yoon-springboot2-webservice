@@ -29,6 +29,10 @@ dependencies {
 
     // mustache
     implementation 'org.springframework.boot:spring-boot-starter-mustache:2.5.3'
+
+    // spring security
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.5.3'
+
 }
 
 test {
