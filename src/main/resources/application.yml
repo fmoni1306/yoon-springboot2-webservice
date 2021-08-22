@@ -5,13 +5,17 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        storage_engine: innodb
   h2:
     console:
       enabled: true
   datasource:
-    url: jdbc:h2:mem:testdb;MODE=MYSQL
+    hikari:
+      jdbc-url: jdbc:h2:mem:testdb;MODE=MYSQL
+      username: sa
   profiles:
     include:
-      - oauth
+      - oauth-google
+      - oauth-naver
   session:
     store-type: jdbc
