@@ -1,6 +1,6 @@
 .gradle
 .idea
-application-oauth.yml
+#application-oauth.yml
 application-oauth-google.yml
 application-oauth-naver.yml
 application-real-db.yml
