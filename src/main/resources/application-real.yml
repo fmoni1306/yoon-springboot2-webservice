@@ -1,7 +1,8 @@
 spring:
   profiles:
     include:
-      - oauth
+      - oauth-google
+      - oauth-naver
       - real-db
   jpa:
     properties:
