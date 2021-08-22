@@ -1,9 +1,0 @@
-spring:
-  jpa:
-    hibernate:
-      ddl-auto: none
-  datasource:
-    url: jdbc:mariadb://yoon-springboot2-webservice.chtn4elbe0ed.ap-northeast-2.rds.amazonaws.com:3306/yoon_springboot2_webservice
-    username: yoon
-    password: dhlfhqek18
-    driver-class-name: org.mariadb.jdbc.Driver
