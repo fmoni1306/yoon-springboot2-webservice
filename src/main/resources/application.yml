@@ -15,7 +15,6 @@ spring:
       username: sa
   profiles:
     include:
-      - oauth-google
-      - oauth-naver
+      - oauth
   session:
     store-type: jdbc
