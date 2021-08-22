@@ -1,8 +1,8 @@
 .gradle
 .idea
-application-oauth-google.yml
-application-oauth-naver.yml
-application-real-db.yml
+#application-oauth-google.yml
+#application-oauth-naver.yml
+#application-real-db.yml
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/java,intellij
