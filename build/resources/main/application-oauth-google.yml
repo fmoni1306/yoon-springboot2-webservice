@@ -1,10 +1,10 @@
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          # Google
-          google:
-            client-id: 528432131896-7hhrfg18k7ak60tuk2u2sbot57u6eltk.apps.googleusercontent.com
-            client-secret: iQqWf35vgAgAsWROSQ_-Iafh
-            scope: profile,email
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          # Google
+#          google:
+#            client-id: 528432131896-7hhrfg18k7ak60tuk2u2sbot57u6eltk.apps.googleusercontent.com
+#            client-secret: iQqWf35vgAgAsWROSQ_-Iafh
+#            scope: profile,email
