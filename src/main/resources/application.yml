@@ -11,6 +11,8 @@ spring:
   datasource:
     url: jdbc:h2:mem:testdb;MODE=MYSQL
   profiles:
-    include: oauth-google, oauth-naver
+    include:
+    - oauth-google
+    - oauth-naver
   session:
     store-type: jdbc

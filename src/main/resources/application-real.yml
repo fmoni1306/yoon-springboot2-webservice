@@ -1,6 +1,9 @@
 spring:
   profiles:
-    include: oauth-google, oauth-naver, real-db
+    include:
+    - oauth-google
+    - oauth-naver
+    - real-db
   jpa:
     properties:
       hibernate:
